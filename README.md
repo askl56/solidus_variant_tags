@@ -33,7 +33,7 @@ When testing your applications integration with this extension you may use it's 
 Simply add this require statement to your spec_helper:
 
 ```ruby
-require 'spree_variant_tags/factories'
+require 'solidus_variant_tags/factories'
 ```
 
 Copyright (c) 2018 Andrew Scott, released under the New BSD License
