@@ -1,7 +1,7 @@
 # encoding: UTF-8
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_variant_tags'
+  s.name        = 'solidus_variant_tags'
   s.version     = '1.0.0'
   s.summary     = 'Adds tags such as "limited edition", "sold out", etc. to spree products.'
   s.required_ruby_version = '>= 1.9.3'

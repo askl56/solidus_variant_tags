@@ -5,7 +5,7 @@ module SolidusVariantTags
       class_option :auto_run_migrations, :type => :boolean, :default => false
 
       def add_migrations
-        run 'bundle exec rake railties:install:migrations FROM=spree_variant_tags'
+        run 'bundle exec rake railties:install:migrations FROM=solidus_variant_tags'
       end
 
       def run_migrations
