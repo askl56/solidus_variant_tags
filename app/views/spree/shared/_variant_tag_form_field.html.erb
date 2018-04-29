@@ -1,0 +1,10 @@
+<div data-hook="admin_product_form_variant_tags">
+  <%= f.field_container :variant_tags do %>
+    <%= f.label :variant_tag_ids, "Tags" %>
+    <%= f.collection_check_boxes :variant_tag_ids, Spree::VariantTag.all, :id, :presentation do |b|
+      content_tag :div do
+        b.label { b.check_box + ' ' + b.text }
+      end
+    end %>
+  <% end %>
+</div>
