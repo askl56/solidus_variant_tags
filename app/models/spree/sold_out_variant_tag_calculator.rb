@@ -5,12 +5,12 @@ module Spree
     end
 
     def self.presentation
-      'Sold Out'
+      'Notify Me'
     end
 
     def self.applicable?(variant)
-      if variant.is_master?
-        variant.product.variants_including_master.reduce(true) { |all_cannot_supply, variant| all_cannot_supply && !variant.can_supply? }
+      unless variant.product.grid_items.any? { |grid_item| grid_item.display_separately? }
+        !variant.product.variants_including_master.any? { |variant| variant.can_supply? }
       else
         !variant.can_supply?
       end
