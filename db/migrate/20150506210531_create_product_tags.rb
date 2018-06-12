@@ -1,4 +1,4 @@
-class CreateProductTags < ActiveRecord::Migration
+class CreateProductTags < ActiveRecord::Migration[5.1]
   def change
     create_table :spree_variant_tags do |t|
       t.string :name

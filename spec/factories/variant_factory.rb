@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :variant_with_3_tags, class: Spree::Variant, parent: :variant do
     transient do
       variant_tags_count 3
