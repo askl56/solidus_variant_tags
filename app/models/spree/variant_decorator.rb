@@ -1,5 +1,5 @@
 Spree::Variant.class_eval do
-  has_and_belongs_to_many :variant_tags, class_name: 'Spree::VariantTag', join_table: :spree_variant_tags_variants
+  has_and_belongs_to_many :variant_tags, class_name: 'Spree::VariantTag', join_table: :spree_variant_tags_variants, autosave: true
 
   mattr_accessor :auto_tag_calculators
   self.auto_tag_calculators = [ Spree::SoldOutVariantTagCalculator ]
